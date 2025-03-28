@@ -1,105 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TastyEats</title>
+    <link rel="shortcut icon" href="assets/icons8-chef-color-hand-drawn-96.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/efcf05635f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header  class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom head">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none font">
+         <span> <i class="fa-solid fa-utensils"></i></span></i><p id="taste">TastyEats</p> </a>
+      </div>
 
- <html lang="en"> 
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 list">
+        <li><a href="#" class="nav-link px-2 ">Home</a></li>
+        <li><a href="#" class="nav-link px-2">Menu</a></li>
+        <li><a href="#" class="nav-link px-2">About us</a></li>
+        <li><a href="#" class="nav-link px-2">Contact</a></li>
+      </ul>
 
-<head>    
+      <div class="col-md-3 text-end">
+        <button type="button" class="booktable">Book A Table</button>
+      </div>
+    </header>
+    <main>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide margin">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item slides active" data-bs-interval="10000">
+            <img src="./assets/banksia6-supplied.jpg" class="d-block w-100" alt="...">
+            <div class="d-none d-md-block text">
+              <h5>Follow <br>
+                <span>your taste</span></h5>
+              <p>Active your day with something delicious</p>
+              <button id="place-order">Place Order</button>
+            </div>
+          </div>
+          <div class="carousel-item slides" data-bs-interval="2000">
+            <img src="./assets/A_party_tray_of_sliders_at_a_restaurant.jpg" class="d-block w-100" alt="...">
+            <div class="d-none d-md-block text">
+              <h5>Follow <br>
+                <span>your taste</span></h5>
+              <p>Active your day with something delicious</p>
+              <button id="place-order">Place Order</button>
+            </div>
+          </div>
+          <div class="carousel-item slides">
+            <img src="./assets/The-Canary-Leeds-34.jpg" class="d-block w-100" alt="...">
+            <div class="d-none d-md-block text text3">
+              <h5>Follow <br>
+                <span>your taste</span></h5>
+              <p>Active your day with something delicious</p>
+              <button id="place-order">Place Order</button>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </main>
+      <!-- menu section  -->
 
-<meta charset="UTF-8">  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-
- <title>Tasty Eats Menu</title> </head>
-
- <body>   
-
- <h1>Tasty Eats Menu</h1>
-
-    <h2>Appetizers</h2>  
-
-  <ul>     
-
-   <li>          
-
-  <strong>Caprese Salad</strong>       
-
-     <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p> 
-
-       </li>    
-       <li>          
-
-        <strong>Bruschetta with Tomato and Basil</strong>       
-      
-           <p> fresh tomatoes, garlic, basil, and a drizzle of olive oil</p> 
-      
-             </li>    
-             <li>          
-
-                <strong>Shrimp Cocktail</strong>       
-              
-                   <p>Chilled, cooked shrimp served with a tangy cocktail sauce.</p> 
-              
-                     </li> 
-
-   </ul>  
-
-  <h2>Main Courses</h2> 
-
-   <ul>   
-
-     <li>      
-
-      <strong>Grilled Salmon</strong>     
-
-       <p>Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce.</p>   
-
-     </li>     
-     <li>      
-
-        <strong>Beef Tacos</strong>     
-  
-         <p>Seasoned ground beef served in warm tortillas with your favorite toppings, such as shredded lettuce, diced tomatoes, cheese, and sour cream</p>   
-  
-       </li>     
-       <li>      
-
-        <strong>Chicken Stir-Fry</strong>     
-  
-         <p>Tender chicken pieces stir-fried with a colorful mix of vegetables (like broccoli, carrots, bell peppers, and snap peas) in a savory sauce.</p>   
-  
-       </li>     
+      <menu>
+        <h3 id="menuhead">
+          View Our Menu
+        </h3>
+        <div class="container text-center">
+          <div class="row grid">
+            <div class="col-md-3" id="grid">
+              <img src="./assets/istockphoto-1161996776-612x612.webp" alt="">
+              <div>
+                <h4> Pancakes with Maple Syrup</h4>
+                <p>Fresh Blueberries / Maple Syrup / Mint leaves</p>
+                <p>340g</p>
+                <p>A delicious and inviting stack of blueberry pancakes. The combination of the fluffy pancakes, juicy blueberries, sweet syrup, creates a balanced and flavorful breakfast or brunch.</p>
+                <p>$8.49</p>
+              </div>
+            </div>
+            <div class="col-md-3" id="grid">
+              <img src="./assets/menu1.webp" alt="">
+              <div>
+                <h4>Greek Lamb Burger</h4>
+                <p> Feta cheese / french fries / Lamb / seed bun</p>
+                <p>220g</p>
+                <p>This Greek Lamb Burger is a flavorful and satisfying meal that combines the heartiness of a burger with the fresh, vibrant flavors of Greek cuisine. </p>
+                <p>$4.49</p>
+              </div>
+            </div>
+            <div class="col-md-3" id="grid">
+              <img src="./assets/menu2.webp" alt="">
+              <div>
+                <h4>Salmon dish</h4>
+                <p> Salmon / lemon slices / potatoes / persley</p>
+                <p>410g</p>
+                <p> a simple yet elegant salmon dish, focusing on fresh ingredients and clean flavors.</p>
+                <p>$70.49</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </menu>
     
-   <!-- Add two more main course items with descriptions --> 
+<!-- about us  -->
+<h3 class="about-head">About us </h3>
 
-   </ul>   
+<div class="container text-center about-div">
+  <div class="row about-gap">
+    <div class="col">
+      <div class="aboutCon">
+        <img src="./assets/premium_photo-1661883237884-263e8de8869b.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col about-text">
+      <h4>We Provide good Quality <br> Food to your family </h4>
+      <p>Welcome to <Span id="tasty">TastyEat</Span>, where every meal feels like home. We're a family-owned restaurant, passionate about serving delicious, heartwarming dishes made with fresh, locally sourced ingredients.</p>
+      <p>Our recipes are inspired by generations of family traditions, and we strive to create a warm, inviting atmosphere where you can share memorable moments with loved ones.We source the finest ingredients and employ classic cooking techniques to craft refined and memorable dishes. </p>
+    </div>
+  </div>
+</div>
 
- <h2>Desserts</h2>  
+<!-- contact section  -->
 
-  <ul>     
-
-   <li>    
-
-        <strong>Chocolate Fondue</strong>     
-
-       <p>Assorted fruits and marshmallows served with rich chocolate fondue.</p>    
-
-    </li>    
-    <li>    
-
-        <strong>Fruit Salad</strong>     
-
-       <p>A refreshing mix of seasonal fruits, like berries, melon, and grapes. A light and healthy option.       </p>    
-
-    </li>    
-    <li>    
-
-        <strong>Ice Cream Sundae</strong>     
-       <p>Scoops of your favorite ice cream topped with chocolate sauce, whipped cream, and sprinkles. Easy to customize and always a hit.</p>    
-
-    </li>    
-  </ul> 
-
-   <p><a href="contact.html">Contact us for reservations</a></p> 
-
-</body>
-
- </html>
+  <form class="row g-3 contact" >
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email address">
+    </div>
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">Message</label>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn booktable">Submit</button>
+    </div>
+  </form>
+<!-- footer section  -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex social">
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
